@@ -1,0 +1,44 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}body{background:#f4f4f4;color:#222;transition:.3s}
+header{background:#111;color:white;position:sticky;top:0;z-index:10}
+nav{max-width:1200px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
+nav h1{font-size:27px}nav ul{display:flex;list-style:none;align-items:center;gap:25px}
+nav a{color:white;text-decoration:none;font-weight:bold}nav a:hover{color:#ff3b30}
+#themeBtn{border:none;background:#333;color:white;padding:8px 12px;border-radius:5px;cursor:pointer}
+.hero{min-height:450px;display:flex;align-items:center;justify-content:center;text-align:center;color:white;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1500&q=80");
+background-size:cover;background-position:center}.hero h2{font-size:48px;margin-bottom:15px}
+.hero p{font-size:19px;margin-bottom:30px}.btn{background:#e63946;color:white;padding:13px 25px;text-decoration:none;border-radius:6px;display:inline-block;font-weight:bold}
+.container{max-width:1200px;margin:auto;padding:55px 20px}.title{text-align:center;font-size:32px;margin-bottom:30px}
+.controls{display:flex;justify-content:center;gap:15px;margin-bottom:35px}.controls input,.controls select{padding:13px;border:1px solid #ccc;border-radius:6px;font-size:16px}
+.controls input{width:300px}.controls select{width:180px}.bike-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.bike-card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 4px 15px rgba(0,0,0,.12);transition:.3s}
+.bike-card:hover{transform:translateY(-7px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.bike-card img{width:100%;height:190px;object-fit:cover}.bike-info{padding:20px}
+.bike-info h3{font-size:22px;margin-bottom:8px}.bike-info p{color:#666;margin:6px 0}
+.price{color:#e63946!important;font-size:20px;font-weight:bold}.details-btn{width:100%;border:none;background:#111;color:white;padding:11px;margin-top:12px;border-radius:5px;cursor:pointer}
+.details-btn:hover{background:#e63946}.about{background:#222;color:white;text-align:center;padding:60px 20px}
+.about>p{max-width:700px;margin:15px auto 35px;line-height:1.6}.features{max-width:1000px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.features div{background:#333;padding:25px;border-radius:10px}.features span{font-size:35px}.features h3{margin:12px 0}.features p{color:#ccc}
+footer{background:#111;color:white;text-align:center;padding:20px}.modal{display:none;position:fixed;z-index:20;inset:0;background:rgba(0,0,0,.7);justify-content:center;align-items:center;padding:20px}
+.modal-content{background:white;width:450px;max-width:100%;border-radius:10px;padding:30px;position:relative}
+#close{position:absolute;right:18px;top:10px;font-size:30px;cursor:pointer}#details img{width:100%;height:220px;object-fit:cover;border-radius:8px;margin-bottom:15px}
+#details h2{margin-bottom:10px}#details p{margin:8px 0}body.dark{background:#151515;color:white}
+body.dark .bike-card,body.dark .modal-content{background:#252525;color:white}body.dark .bike-info p{color:#bbb}
+body.dark .controls input,body.dark .controls select{background:#333;color:white;border-color:#555}
+@media(max-width:850px){.bike-grid{grid-template-columns:repeat(2,1fr)}.features{grid-template-columns:1fr}.hero h2{font-size:38px}}
+@media(max-width:600px){nav{flex-direction:column;gap:15px}nav ul{gap:12px}.bike-grid{grid-template-columns:1fr}.controls{flex-direction:column}
+.controls input,.controls select{width:100%}.hero{min-height:380px;padding:20px}.hero h2{font-size:32px}}
+
+/* Login Page */
+.login-page{min-height:100vh;display:flex;justify-content:center;align-items:center;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=1500&q=80");background-size:cover;background-position:center;}
+.login-box{width:360px;background:white;padding:35px;border-radius:12px;text-align:center;box-shadow:0 8px 30px rgba(0,0,0,.3);}
+.login-box h1{margin-bottom:20px}.login-box h2{margin-bottom:8px}.login-box p{color:#666;margin-bottom:18px}
+.login-box input{width:100%;padding:13px;margin:8px 0;border:1px solid #ccc;border-radius:6px;font-size:15px}
+.login-box button{width:100%;padding:13px;margin-top:10px;border:0;border-radius:6px;background:#e63946;color:white;font-size:16px;font-weight:bold;cursor:pointer}
+.login-box button:hover{background:#b92330}
+#loginMessage{margin-top:15px;color:#e63946!important}
+.hidden{display:none}
+@media(max-width:600px){.login-box{width:90%;}}
+
+.logout{border:0;background:#e63946;color:white;padding:8px 12px;border-radius:5px;cursor:pointer}

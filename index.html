@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bike Vault</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loginPage" class="login-page">
+<div class="login-box">
+<h1>🏍️ Bike Vault</h1>
+<h2>Login</h2>
+<p>Login to explore Bike Vault</p>
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<p id="loginMessage"></p>
+</div>
+</div>
+
+<div id="mainPage" class="hidden">
+<header><nav>
+<h1>🏍️ Bike Vault</h1>
+<ul>
+<li><a href="#home">Home</a></li><li><a href="#bikes">Bikes</a></li>
+<li><a href="#about">About</a></li><li><button id="themeBtn">🌙</button></li><li><button class="logout" onclick="logout()">Logout</button></li>
+</ul>
+</nav></header>
+
+<section id="home" class="hero"><div>
+<h2>Explore Your Dream Bike</h2>
+<p>Discover popular bikes, specifications and prices in one place.</p>
+<a href="#bikes" class="btn">Explore Bikes</a>
+</div></section>
+
+<section id="bikes" class="container">
+<h2 class="title">Popular Bikes</h2>
+<div class="controls">
+<input type="text" id="search" placeholder="Search bike name...">
+<select id="category">
+<option value="all">All Bikes</option><option value="sports">Sports</option>
+<option value="cruiser">Cruiser</option><option value="commuter">Commuter</option>
+<option value="adventure">Adventure</option>
+</select>
+</div>
+<div id="bikeList" class="bike-grid"></div>
+</section>
+
+<section id="about" class="about">
+<h2>About Bike Vault</h2>
+<p>Bike Vault is a simple frontend web application that helps users explore different bikes, their specifications and prices.</p>
+<div class="features">
+<div><span>🏍️</span><h3>Bike Collection</h3><p>Explore different types of bikes.</p></div>
+<div><span>🔍</span><h3>Easy Search</h3><p>Search bikes quickly by name.</p></div>
+<div><span>⚙️</span><h3>Specifications</h3><p>View important bike details.</p></div>
+</div></section>
+
+<div id="modal" class="modal"><div class="modal-content">
+<span id="close">&times;</span><div id="details"></div>
+</div></div>
+<footer><p>© 2026 Bike Vault | Web Application Development Project</p></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
